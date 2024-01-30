@@ -2,6 +2,9 @@ import requests
 import json
 import time
 import subprocess
+import os
+
+os.system('figlet -f slant -c "IP_Tracking" | lolcat && figlet -f digital -c "Make Py BlackCrow" | lolcat')
 
 def get_ip_location(ip):
     api_key = "f43dafcad8ef284500f7f28ce7d2f732"
