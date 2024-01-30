@@ -6,8 +6,10 @@ import os
 
 os.system('figlet -f slant -c "IP_Tracking" | lolcat && figlet -f digital -c "Make Py BlackCrow" | lolcat')
 
+api = input("Enter Api ipstack : ")
+
 def get_ip_location(ip):
-    api_key = "f43dafcad8ef284500f7f28ce7d2f732"
+    api_key = api
     url = f"http://api.ipstack.com/{ip}?access_key={api_key}"
     response = requests.get(url)
     data = response.json()
